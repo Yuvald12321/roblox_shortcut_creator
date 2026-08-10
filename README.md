@@ -34,7 +34,7 @@ To create a shortcut for a specific Roblox game manually, you have to go through
 8. Name the shortcut and save it.
 9. Search Google for the game's official icon image.
 10. Download the image.
-11. Open an online converter to turn the image into an `.ico` file.
+11. Open an online converter to turn the image into a `.ico` file.
 12. Download and save the `.ico` file to a folder you won't delete.
 13. Right-click your new desktop shortcut → **Properties**.
 14. Click **Change Icon...** → **Browse...**
