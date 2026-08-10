@@ -14,7 +14,7 @@ Create desktop shortcuts for your favorite Roblox games — in just one click.
 > 1. Click **"More info"** on the popup.
 > 2. Click **"Run anyway"**.
 > 
-> **This project is 100% open source.** You can review all the code in `main.py` or compile it yourself from source.
+**This project is 100% open source.** You can review all the code in `main.py` or compile it yourself from source.
 
 ---
 
