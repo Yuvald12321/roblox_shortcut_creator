@@ -10,7 +10,7 @@ Create desktop shortcuts for your favorite Roblox games — in just one click.
 > ⚠️ **Windows SmartScreen Notice** > Windows may display a *"Windows protected your PC"* warning when running the `.exe`.
 > This happens because the application is not signed with an expensive code-signing certificate.
 >
-> > **How to run it:**
+> **How to run it:**
 > 1. Click **"More info"** on the popup.
 > 2. Click **"Run anyway"**.
 > 
