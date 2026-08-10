@@ -7,8 +7,13 @@ Create desktop shortcuts for your favorite Roblox games — in just one click.
 ### ⬇️ Download
 👉 **[Download the latest RSC.exe](../../raw/master/dist/RSC.exe)**
 
-> ⚠️ **Windows SmartScreen Notice** > Windows may display a *"Windows protected your PC"* warning when running the `.exe`.  
-> This happens because the application is not signed with an expensive code-signing certificate.  
+> ⚠️ **Windows SmartScreen Notice** > Windows may display a *"Windows protected your PC"* warning when running the `.exe`.
+> This happens because the application is not signed with an expensive code-signing certificate.
+>
+> > **How to run it:**
+> 1. Click **"More info"** on the popup.
+> 2. Click **"Run anyway"**.
+> 
 > **This project is 100% open source.** You can review all the code in `main.py` or compile it yourself from source.
 
 ---
