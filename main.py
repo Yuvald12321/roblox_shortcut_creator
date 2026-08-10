@@ -28,7 +28,7 @@ class RSC(ctk.CTk):
         super().__init__()
         self.title("RSC - Roblox Shortcut Creator")
         self.geometry("620x720")
-        self.resizable(False, False)
+        self.minsize(620, 600)
         self.protocol("WM_DELETE_WINDOW", self._close_application)
 
         self.ICONS_PATH = Path.home() / "RSC icons"
@@ -122,13 +122,14 @@ class RSC(ctk.CTk):
         content_frame = ctk.CTkFrame(self, fg_color="transparent")
         content_frame.grid(row=3, column=0, padx=24, pady=4, sticky="nsew")
         content_frame.grid_columnconfigure(0, weight=1)
+        content_frame.grid_rowconfigure(1, weight=1)
 
         self.results_title = ctk.CTkLabel(
             content_frame,
             text="Search Results",
             font=self.fonts["section"],
         )
-        self.results_title.pack(anchor="w", pady=(0, 4))
+        self.results_title.grid(row=0, column=0, pady=(0, 4), sticky="w")
 
         self.results_frame = ctk.CTkScrollableFrame(
             content_frame,
@@ -136,7 +137,7 @@ class RSC(ctk.CTk):
             corner_radius=10,
             fg_color=("gray85", "gray14"),
         )
-        self.results_frame.pack(fill="x", pady=(0, 16))
+        self.results_frame.grid(row=1, column=0, pady=(0, 16), sticky="nsew")
         self.results_frame.grid_columnconfigure(0, weight=1)
         self._show_results_placeholder("Matches will appear here after searching.")
 
@@ -144,7 +145,7 @@ class RSC(ctk.CTk):
             content_frame,
             text="Selected Game Preview",
             font=self.fonts["section"],
-        ).pack(anchor="w", pady=(0, 4))
+        ).grid(row=2, column=0, pady=(0, 4), sticky="w")
 
         self.preview_card = ctk.CTkFrame(
             content_frame,
@@ -153,7 +154,7 @@ class RSC(ctk.CTk):
             border_width=1,
             border_color=("gray75", "gray25"),
         )
-        self.preview_card.pack(fill="x", ipady=10)
+        self.preview_card.grid(row=3, column=0, sticky="ew")
         self.preview_card.grid_columnconfigure(1, weight=1)
 
         image_container = ctk.CTkFrame(
