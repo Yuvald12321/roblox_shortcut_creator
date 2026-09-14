@@ -58,9 +58,7 @@ class RSC(ctk.CTk):
         key_path = r"Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders"
         with winreg.OpenKey(winreg.HKEY_CURRENT_USER, key_path) as key:
             try:
-                raw_path, _ = winreg.QueryValueEx(
-                    key, "{758026A1-9253-400D-A76F-15E2157B228D}"
-                )
+                raw_path, _ = winreg.QueryValueEx(key, "{758026A1-9253-400D-A76F-15E2157B228D}")
             except FileNotFoundError:
                 raw_path, _ = winreg.QueryValueEx(key, "Desktop")
         self.DESKTOP_PATH = Path(os.path.expandvars(raw_path)).expanduser()
